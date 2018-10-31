@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		
+		var phonenumber = prompt(" 966500000000 ", "");
+		if (phonenumber != null) {
+			phonenumber=phonenumber.replace(/\s/g,'');
+			phonenumber=phonenumber.slice(1);
+			phonenumber=966+phonenumber;
+			window.location.href = "https://api.whatsapp.com/send?phone="+phonenumber;
+
+		}
+	</script>
+</body>
+</html>
